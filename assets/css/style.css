@@ -1,0 +1,149 @@
+/* 
+    SUMMARY
+    1. LAYOUT
+    2. NAV
+*/
+
+
+/* 
+    1. LAYOUT
+*/
+
+:root{
+    --primary: #131515;
+    --secondary: #1E2121;
+    --grey: #444B4B;
+    --blue: #2748D8;
+    --blueHover: #3458F8;
+    --white: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+html, body{
+    font-family: "Nunito Sans", sans-serif;
+    background: var(--secondary);
+    color: var(--white);
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;  
+}
+
+button{
+    padding: 8px 16px;
+    box-shadow: unset;
+    cursor: pointer;
+    display: block;
+    font-weight: 800;
+    border-radius: 16px;
+}
+
+.button-primary{
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+}
+
+.button-secondary{
+    background-color: transparent;
+    color: var(--white);
+    border: solid 1px var(--grey);
+}
+
+.button-primary:hover,
+.button-secondary:hover{
+    background-color: var(--blueHover);
+    transition: all 0.5s;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+/* 
+    2. NAV    
+*/
+.nav{
+    background-color: var(--primary);
+}
+
+.content-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.itens-nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.itens-nav li{
+    list-style: none;
+    font-weight: 800;
+}
+
+
+
+
+/* BREAK POINT */
+
+@media screen and (max-width:576px ) {
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (min-width:576px ) {
+    .container{
+        width: 540px;
+    }
+}
+@media screen and (min-width:768px ) {
+    .container{
+        width: 720px;
+    }
+}
+@media screen and (min-width:992px ) {
+    .container{
+        width: 960px;
+    }
+}
+@media screen and (min-width:1200px ) {
+    .container{
+        width: 1140px;
+    }
+}
+@media screen and (min-width:1400px ) {
+   .container{
+    width: 1320px;
+   }
+    
+}
